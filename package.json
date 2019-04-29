@@ -1,0 +1,14 @@
+{
+  "name": "bastards-object-validator",
+  "version": "1.0.0",
+  "description": "Simple object validator",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
