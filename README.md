@@ -9,6 +9,7 @@
 ## Running development
 
 `npm install`
+
 `npm run test`
 
 ## Running library locally
