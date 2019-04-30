@@ -1,6 +1,6 @@
 
 const ObjectValidator = require('./ObjectValidator');
-const Schema = require('./Schema');
+const SchemaValidator = require('./SchemaValidator');
 
 /**
  * Bastards Object Validation Class
@@ -19,7 +19,7 @@ class BOV {
      */
     static validate(object, schemaObject) {
         // schemaObject can also be passed as a Schema object to pass reconstructing
-        const schema = (schemaObject instanceof Schema) ? schemaObject : this.Schema(schemaObject)
+        const schema = (schemaObject instanceof SchemaValidator) ? schemaObject : this.Schema(schemaObject)
         return ObjectValidator.validate(object, schema)
     }
 
@@ -28,11 +28,11 @@ class BOV {
      * 
      * @static
      * @param {*} schemaObject schema object to validate from
-     * @returns {Schema}
+     * @returns {SchemaValidator}
      * @memberof BOV
      */
     static Schema(schemaObject) {
-        return new Schema(schemaObject)
+        return new SchemaValidator(schemaObject)
     }
 }
 module.exports = BOV

@@ -7,10 +7,10 @@
  * @extends {Error}
  */
 class ValidationError extends Error {
-    constructor(message) {
-        super(message);
-        this.name = "ValidationError";
-    }
+  constructor (message) {
+    super(message)
+    this.name = 'ValidationError'
+  }
 }
 
 /**
@@ -20,10 +20,10 @@ class ValidationError extends Error {
  * @extends {Error}
  */
 class SchemaError extends Error {
-    constructor(message) {
-        super(message); 
-        this.name = "SchemaError";
-    }
+  constructor (message) {
+    super(message) 
+    this.name = 'SchemaError'
+  }
 }
 
 module.exports = { ValidationError, SchemaError }

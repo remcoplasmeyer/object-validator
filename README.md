@@ -9,10 +9,14 @@
 ## Running development
 
 `npm install`
-
 `npm run test`
 
 ## Running library locally
+
+`git clone`
+`node playground.js`
+
+OR
 
 `npm install --save ../[path to local bastards-object-validator]`
 
