@@ -13,7 +13,8 @@
 
 ## Running library locally
 
-`git clone`
+Clone the repository and run:
+
 `node playground.js`
 
 OR
